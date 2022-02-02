@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv1_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What's Your gender?"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2_rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1_rl1"
+            android:layout_marginTop="5dp"
+            android:text="To Personalize your plan."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2_rl1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv1_rl1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/female" />
+
+            <TextView
+                android:id="@+id/tv1_rl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv1_rl1"
+                android:paddingLeft="40dp"
+                android:text="Female"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/iv2_rl1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_toRightOf="@id/iv1_rl1"
+                android:src="@drawable/male" />
+
+            <TextView
+                android:id="@+id/tv2_rl2"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv2_rl1"
+                android:layout_toRightOf="@+id/tv1_rl2"
+                android:text="Male" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:text="Ok"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+</LinearLayout>

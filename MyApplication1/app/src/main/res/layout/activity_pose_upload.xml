@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PoseUploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/pose_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Holding Time"
+            android:inputType="number"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_right_hip_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="rha"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_left_hip_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="lha"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_right_knee_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="rka"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_left_knee_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="lka"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_right_shoulder_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="rsa"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_left_shoulder_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="lsa"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_right_elbow_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="rea"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_left_elbow_angle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="lea"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textImeMultiLine"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/pose_step_by_step_procedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Procedure"
+            android:inputType="textImeMultiLine"
+            android:ems="10"/>
+
+        <Spinner
+            android:id="@+id/pose_difficulty_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/pose_facing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/pose_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/pose_image_selector"
+            android:text="Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/pose_data_upload_btn"
+            android:text="Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

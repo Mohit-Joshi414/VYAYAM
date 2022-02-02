@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv1_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Parameters"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/tv2_main"
+        android:layout_below="@id/tv1_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET  PERSONALIZED PLAN"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textSize="26sp"
+        android:textColor="#000"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:layout_below="@id/tv2_main"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv1_rl1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/gender" />
+
+            <TextView
+                android:id="@+id/tv1_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv1_rl1"
+                android:text="Gender"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv2_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/iv2_rl1"
+                android:text="Male"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv2_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv3_rl1"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/tv3_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="Edit"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv1_rl2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/age" />
+
+            <TextView
+                android:id="@+id/tv1_rl2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv1_rl2"
+                android:text="Age"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv2_rl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/iv2_rl2"
+                android:text="18"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv2_rl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv3_rl2"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/tv3_rl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="Edit"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv1_rl3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/weight" />
+
+            <TextView
+                android:id="@+id/tv1_rl3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv1_rl3"
+                android:text="Weight"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv2_rl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/iv2_rl3"
+                android:text="60 kg"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv2_rl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv3_rl3"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/tv3_rl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="Edit"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv4"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/cv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv1_rl4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/height" />
+
+            <TextView
+                android:id="@+id/tv1_rl4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv1_rl4"
+                android:text="Height"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv2_rl4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/iv2_rl4"
+                android:text="160 cm"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv2_rl4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv3_rl4"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/tv3_rl4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="Edit"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv5"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        android:layout_below="@+id/cv4"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv1_rl5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/meal" />
+
+            <TextView
+                android:id="@+id/tv1_rl5"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv1_rl5"
+                android:text="Meal"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv2_rl5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/iv2_rl5"
+                android:text="Veg"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv2_rl5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv3_rl5"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/tv3_rl5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="Edit"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv6"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    <Button
+        android:id="@+id/done_pd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#080DD3"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

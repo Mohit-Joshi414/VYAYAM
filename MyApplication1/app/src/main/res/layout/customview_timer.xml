@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl1_ta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/tv3_ta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Timer"
+            android:textSize="35sp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3_ta"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="And get ready..."/>
+
+        <TextView
+            android:id="@+id/tv1_ta"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/btn1_ta"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv1_ta"
+            android:layout_below="@id/tv4"
+            app:srcCompat="@drawable/ic_up" />
+
+        <ImageButton
+            android:id="@+id/btn2_ta"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/tv1_ta"
+            android:layout_below="@id/tv4"
+            app:srcCompat="@drawable/ic_down" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1_ta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#033AFF"
+            android:text="Done"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2_ta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/counttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textSize="70sp" />
+    </RelativeLayout>
+</RelativeLayout>

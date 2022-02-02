@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "399457671067",
+    "firebase_url": "https://vyayam-270a5-default-rtdb.firebaseio.com",
+    "project_id": "vyayam-270a5",
+    "storage_bucket": "vyayam-270a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399457671067:android:7ce54b664397af545eb33e",
+        "android_client_info": {
+          "package_name": "com.google.mlkit.vision.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399457671067-8nn4aai5dsmj7ldpqa0j0g2j0gkiirpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB62o4XJZlNdblJFdPOE7b2ETXcN-uzzkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399457671067-8nn4aai5dsmj7ldpqa0j0g2j0gkiirpe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

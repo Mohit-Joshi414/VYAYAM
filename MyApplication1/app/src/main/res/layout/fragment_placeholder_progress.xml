@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="10dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/exercise" />
+
+                        <TextView
+                            android:id="@+id/exercise_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/image1"
+                            android:text="0"
+                            android:textColor="#000"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/exercise_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/image1"
+                            android:text="Exercises"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rl1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/calories" />
+
+                        <TextView
+                            android:id="@+id/calories_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/image2"
+                            android:text="0"
+                            android:textColor="#000"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/calory_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/image2"
+                            android:text="Calories"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl1"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/clock" />
+
+                        <TextView
+                            android:id="@+id/duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/image3"
+                            android:text="0"
+                            android:textColor="#000"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/duration_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/image3"
+                            android:text="Duration"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/rl3"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="50dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/history" />
+
+                        <TextView
+                            android:id="@+id/history_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/image4"
+                            android:text="History"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/rl2">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pose1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_cv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_rl1"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                android:elevation="10dp"
+                android:padding="5dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/main_rl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bmi_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Calculate BMI"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/bmi_iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/bmi_tv2"
+                        app:srcCompat="@drawable/ic_edit" />
+
+                    <TextView
+                        android:id="@+id/bmi_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="start"
+                        android:paddingEnd="12dp"
+                        android:text="Edit"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/bmi_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bmi_tv1"
+                        android:layout_marginLeft="12dp"
+                        android:text="0.0 KG/M*M"
+                        android:textColor="#080DD3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/bmi_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bmi_tv3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Calculate BMI"
+                        android:textColor="#080DD3"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/main_cv3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/main_cv2"
+                android:layout_margin="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_cv2">
+
+                    <TextView
+                        android:id="@+id/tv_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Calories Graph"
+                        android:textColor="#000"
+                        android:textSize="25sp" />
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tv_height"
+                        android:layout_margin="5dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
